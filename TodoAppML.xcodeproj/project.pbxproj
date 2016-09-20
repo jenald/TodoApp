@@ -15,7 +15,7 @@
 		03C0D9491D91638200B4571A /* MLPendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0D9481D91638200B4571A /* MLPendingViewController.swift */; };
 		03C0D94C1D9163AE00B4571A /* MLPendingVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0D94B1D9163AE00B4571A /* MLPendingVCModel.swift */; };
 		03C0D94E1D9163D000B4571A /* MLPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0D94D1D9163D000B4571A /* MLPendingTableViewCell.swift */; };
-		03C0D9511D91645500B4571A /* NLDataAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0D9501D91645500B4571A /* NLDataAccessManager.swift */; };
+		03C0D9511D91645500B4571A /* MLDataAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0D9501D91645500B4571A /* MLDataAccessManager.swift */; };
 		3243E1CBF0BFE4271410A7F7 /* Pods_TodoAppML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755045F3EF8C13C02A9A421F /* Pods_TodoAppML.framework */; };
 		61F0957B911E5E0C336F721F /* Pods_TodoAppMLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225D79FDCDFE6B762ADACF81 /* Pods_TodoAppMLTests.framework */; };
 /* End PBXBuildFile section */
@@ -43,7 +43,7 @@
 		03C0D9481D91638200B4571A /* MLPendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MLPendingViewController.swift; path = "View Controller/MLPendingViewController.swift"; sourceTree = "<group>"; };
 		03C0D94B1D9163AE00B4571A /* MLPendingVCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MLPendingVCModel.swift; path = Model/MLPendingVCModel.swift; sourceTree = "<group>"; };
 		03C0D94D1D9163D000B4571A /* MLPendingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MLPendingTableViewCell.swift; path = View/MLPendingTableViewCell.swift; sourceTree = "<group>"; };
-		03C0D9501D91645500B4571A /* NLDataAccessManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NLDataAccessManager.swift; path = Network/NLDataAccessManager.swift; sourceTree = "<group>"; };
+		03C0D9501D91645500B4571A /* MLDataAccessManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MLDataAccessManager.swift; path = Network/MLDataAccessManager.swift; sourceTree = "<group>"; };
 		225D79FDCDFE6B762ADACF81 /* Pods_TodoAppMLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoAppMLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD9BFBE99962DB9587A81E8 /* Pods-TodoAppML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoAppML.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodoAppML/Pods-TodoAppML.debug.xcconfig"; sourceTree = "<group>"; };
 		634BBCC74C060DE97F4A53CE /* Pods-TodoAppMLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoAppMLTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodoAppMLTests/Pods-TodoAppMLTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		03C0D94F1D91641C00B4571A /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				03C0D9501D91645500B4571A /* NLDataAccessManager.swift */,
+				03C0D9501D91645500B4571A /* MLDataAccessManager.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -372,7 +372,7 @@
 				03C0D94E1D9163D000B4571A /* MLPendingTableViewCell.swift in Sources */,
 				0343107C1D916218002BB8BA /* AppDelegate.swift in Sources */,
 				03C0D9491D91638200B4571A /* MLPendingViewController.swift in Sources */,
-				03C0D9511D91645500B4571A /* NLDataAccessManager.swift in Sources */,
+				03C0D9511D91645500B4571A /* MLDataAccessManager.swift in Sources */,
 				03C0D94C1D9163AE00B4571A /* MLPendingVCModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

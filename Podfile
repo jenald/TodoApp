@@ -8,6 +8,8 @@ target 'TodoAppML' do
   # Pods for TodoAppML
   pod 'SwiftyJSON'
   pod 'Alamofire'
+  pod 'SwiftSpinner'
+
   target 'TodoAppMLTests' do
     inherit! :search_paths
     # Pods for testing
