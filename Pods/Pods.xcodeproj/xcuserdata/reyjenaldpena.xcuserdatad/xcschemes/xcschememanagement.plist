@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftSpinner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,22 +37,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>12571FE6085BEE279E9E277BC76DDDA8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2FB805CD5D71C662C2A377285B411FB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38C26997E9C56823C181E4FEAD133F16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>72A91513DDE43AF97F1CB886A26C18ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7D05E5CAEE3C5E27AE1142759597C4CC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>831C0A01BC6C63D8286EB8ED5C50D64D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F19B26A867B2545296B39D05C38A50FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
