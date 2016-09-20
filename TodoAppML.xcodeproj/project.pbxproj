@@ -12,6 +12,9 @@
 		034310831D916218002BB8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034310821D916218002BB8BA /* Assets.xcassets */; };
 		034310861D916218002BB8BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034310841D916218002BB8BA /* LaunchScreen.storyboard */; };
 		034310911D916218002BB8BA /* TodoAppMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034310901D916218002BB8BA /* TodoAppMLTests.swift */; };
+		03C0D9491D91638200B4571A /* MLPendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0D9481D91638200B4571A /* MLPendingViewController.swift */; };
+		03C0D94C1D9163AE00B4571A /* MLPendingVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0D94B1D9163AE00B4571A /* MLPendingVCModel.swift */; };
+		03C0D94E1D9163D000B4571A /* MLPendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0D94D1D9163D000B4571A /* MLPendingTableViewCell.swift */; };
 		3243E1CBF0BFE4271410A7F7 /* Pods_TodoAppML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755045F3EF8C13C02A9A421F /* Pods_TodoAppML.framework */; };
 		61F0957B911E5E0C336F721F /* Pods_TodoAppMLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225D79FDCDFE6B762ADACF81 /* Pods_TodoAppMLTests.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +39,9 @@
 		0343108C1D916218002BB8BA /* TodoAppMLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppMLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		034310901D916218002BB8BA /* TodoAppMLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppMLTests.swift; sourceTree = "<group>"; };
 		034310921D916218002BB8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03C0D9481D91638200B4571A /* MLPendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MLPendingViewController.swift; path = "View Controller/MLPendingViewController.swift"; sourceTree = "<group>"; };
+		03C0D94B1D9163AE00B4571A /* MLPendingVCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MLPendingVCModel.swift; path = Model/MLPendingVCModel.swift; sourceTree = "<group>"; };
+		03C0D94D1D9163D000B4571A /* MLPendingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MLPendingTableViewCell.swift; path = View/MLPendingTableViewCell.swift; sourceTree = "<group>"; };
 		225D79FDCDFE6B762ADACF81 /* Pods_TodoAppMLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoAppMLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD9BFBE99962DB9587A81E8 /* Pods-TodoAppML.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoAppML.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodoAppML/Pods-TodoAppML.debug.xcconfig"; sourceTree = "<group>"; };
 		634BBCC74C060DE97F4A53CE /* Pods-TodoAppMLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoAppMLTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodoAppMLTests/Pods-TodoAppMLTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 		03C0D9451D91629F00B4571A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				03C0D94D1D9163D000B4571A /* MLPendingTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 		03C0D9461D9162A800B4571A /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				03C0D9481D91638200B4571A /* MLPendingViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 		03C0D9471D9162B000B4571A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				03C0D94B1D9163AE00B4571A /* MLPendingVCModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -349,7 +358,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C0D94E1D9163D000B4571A /* MLPendingTableViewCell.swift in Sources */,
 				0343107C1D916218002BB8BA /* AppDelegate.swift in Sources */,
+				03C0D9491D91638200B4571A /* MLPendingViewController.swift in Sources */,
+				03C0D94C1D9163AE00B4571A /* MLPendingVCModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
