@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SugarRecord
 //typealias Task = (
 //    id : String?,
 //    task : String?
@@ -16,33 +16,48 @@ import UIKit
 class MLPendingVCModel: NSObject {
     
     /*
-        On completion returns data requested from server or error if something occurs
-        @block : success
-        @block : failed
+     Return array of Pending task list
+     @return: Array
      */
-    class func listOfPendingTasks(success: (data : Array<AnyObject>) -> Void, failed: (error : NSError) -> Void) {
-        let urlString = "https://dl.dropboxusercontent.com/u/6890301/tasks.json"
-        
-        // get data from URL
-        MLDataAccessManager.dataFromServerWithURL(NSURL(string: urlString)!, success: { (data) in
-            let tasksList = MLPendingVCModel.parsePendingTasksOnly(data)
-            success(data: tasksList!)
-            }) { (error) in
-            failed(error: error)
-        }
+    func pendingTaskList() -> NSMutableArray {
+        return DataModel.sharedInstance.pendingList
     }
     
-    
-    class func parsePendingTasksOnly(data : AnyObject) -> Array<AnyObject>? {
-        let dictionary = data.objectForKey("data") as! NSArray
-        var tasks = Array<AnyObject>()
-        for item in dictionary {
-            let task = item as! NSDictionary
-            if task.objectForKey("state") as! NSNumber == 0 {
-                tasks.append(task)
-            }
-        }
-        
-        return tasks
+    /*
+     Returns number of Pending tasks
+     */
+    func pendingListCount() -> Int {
+        return DataModel.sharedInstance.pendingList.count
     }
+
+    
+    /*
+     Transfers the task to Done List
+     @param: task
+     */
+    func addTaskToFinishedList(task : AnyObject) {
+        
+        // add to DOne List
+        DataModel.sharedInstance.doneList.addObject(task)
+        
+        // Remove from Pending List
+        DataModel.sharedInstance.pendingList.removeObject(task)
+    }
+    
+    /*
+     Adds a new Pending task
+     @param: task
+     */
+    func addNewTask(task : AnyObject) {
+        DataModel.sharedInstance.pendingList.addObject(task)
+    }
+    
+    /*
+     Deletes task from Pending List
+     @param: index
+     */
+    func deleteTaskAtIndex(index : Int) {
+        DataModel.sharedInstance.pendingList.removeObjectAtIndex(index)
+    }
+
 }

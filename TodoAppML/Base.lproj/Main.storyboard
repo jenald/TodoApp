@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Done-->
         <scene sceneID="4MQ-S7-zXB">
             <objects>
-                <viewController id="3C3-9g-Gfz" sceneMemberID="viewController">
+                <viewController id="3C3-9g-Gfz" customClass="NLDoneViewController" customModule="TodoAppML" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tiM-E9-JFJ"/>
                         <viewControllerLayoutGuide type="bottom" id="a47-vd-EA6"/>
@@ -20,6 +20,11 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQ9-Df-WLy">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Done" id="NO4-qj-bdY"/>
                                 </items>
@@ -39,7 +44,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="xQ9-Df-WLy" secondAttribute="trailing" constant="-20" id="0Ci-SJ-qoI"/>
                             <constraint firstItem="xQ9-Df-WLy" firstAttribute="leading" secondItem="ifq-61-GDB" secondAttribute="leadingMargin" constant="-20" id="4id-Yp-TFf"/>
@@ -50,13 +55,16 @@
                             <constraint firstItem="HO2-FH-KGm" firstAttribute="top" secondItem="xQ9-Df-WLy" secondAttribute="bottom" id="mOg-8z-pEg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="V9r-8i-LzP"/>
+                    <tabBarItem key="tabBarItem" title="Done" image="done" id="V9r-8i-LzP"/>
+                    <connections>
+                        <outlet property="tableView" destination="HO2-FH-KGm" id="hTt-JW-eXz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xuf-Sx-V1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="579" y="697"/>
         </scene>
-        <!--Item 1-->
+        <!--Pending-->
         <scene sceneID="U66-8Z-DXh">
             <objects>
                 <viewController id="UL9-Vf-rG5" customClass="MLPendingViewController" customModule="TodoAppML" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,9 +78,19 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9QW-j9-onS">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Pending" id="H3j-1r-Mnc">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Jdx-On-dHA"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Jdx-On-dHA">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="didTapAddTaskButton:" destination="UL9-Vf-rG5" id="tdz-zR-dYJ"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -95,7 +113,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="9QW-j9-onS" firstAttribute="leading" secondItem="qJu-Ms-Wrc" secondAttribute="leadingMargin" constant="-20" id="4Sa-Un-sAM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9QW-j9-onS" secondAttribute="trailing" constant="-20" id="8eF-5Q-B3C"/>
@@ -106,7 +124,7 @@
                             <constraint firstItem="tDY-Sm-zF3" firstAttribute="top" secondItem="9QW-j9-onS" secondAttribute="bottom" id="xbJ-Ld-vaX"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="ZFC-Ex-QTF"/>
+                    <tabBarItem key="tabBarItem" title="Pending" image="pending" id="ZFC-Ex-QTF"/>
                     <connections>
                         <outlet property="tableView" destination="tDY-Sm-zF3" id="rRc-jW-ogi"/>
                     </connections>
@@ -134,4 +152,8 @@
             <point key="canvasLocation" x="-241" y="367"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="done" width="25" height="25"/>
+        <image name="pending" width="25" height="25"/>
+    </resources>
 </document>

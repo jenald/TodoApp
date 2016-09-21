@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		030007EA1D91707F007969CD /* MLPendingVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030007E91D91707F007969CD /* MLPendingVCModel.swift */; };
 		030007EC1D917560007969CD /* PendingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030007EB1D917560007969CD /* PendingCell.xib */; };
+		0300080B1D9192E6007969CD /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0300080A1D9192E6007969CD /* DataController.swift */; };
+		0300080D1D919541007969CD /* NLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0300080C1D919541007969CD /* NLModel.swift */; };
+		0300080F1D919A76007969CD /* NLDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0300080E1D919A76007969CD /* NLDoneViewController.swift */; };
+		030008111D91A6AB007969CD /* MLDoneVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030008101D91A6AB007969CD /* MLDoneVCModel.swift */; };
 		0343107C1D916218002BB8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0343107B1D916218002BB8BA /* AppDelegate.swift */; };
 		034310811D916218002BB8BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0343107F1D916218002BB8BA /* Main.storyboard */; };
 		034310831D916218002BB8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034310821D916218002BB8BA /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* Begin PBXFileReference section */
 		030007E91D91707F007969CD /* MLPendingVCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MLPendingVCModel.swift; path = Model/MLPendingVCModel.swift; sourceTree = "<group>"; };
 		030007EB1D917560007969CD /* PendingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PendingCell.xib; path = View/PendingCell.xib; sourceTree = "<group>"; };
+		0300080A1D9192E6007969CD /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataController.swift; path = Model/DataController.swift; sourceTree = "<group>"; };
+		0300080C1D919541007969CD /* NLModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NLModel.swift; path = Model/NLModel.swift; sourceTree = "<group>"; };
+		0300080E1D919A76007969CD /* NLDoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NLDoneViewController.swift; path = "View Controller/NLDoneViewController.swift"; sourceTree = "<group>"; };
+		030008101D91A6AB007969CD /* MLDoneVCModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MLDoneVCModel.swift; path = Model/MLDoneVCModel.swift; sourceTree = "<group>"; };
 		034310781D916218002BB8BA /* TodoAppML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoAppML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0343107B1D916218002BB8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		034310801D916218002BB8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				03C0D9481D91638200B4571A /* MLPendingViewController.swift */,
+				0300080E1D919A76007969CD /* NLDoneViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -139,7 +148,10 @@
 		03C0D9471D9162B000B4571A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0300080A1D9192E6007969CD /* DataController.swift */,
+				0300080C1D919541007969CD /* NLModel.swift */,
 				030007E91D91707F007969CD /* MLPendingVCModel.swift */,
+				030008101D91A6AB007969CD /* MLDoneVCModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -373,8 +385,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030008111D91A6AB007969CD /* MLDoneVCModel.swift in Sources */,
+				0300080D1D919541007969CD /* NLModel.swift in Sources */,
 				03C0D94E1D9163D000B4571A /* MLPendingTableViewCell.swift in Sources */,
 				0343107C1D916218002BB8BA /* AppDelegate.swift in Sources */,
+				0300080B1D9192E6007969CD /* DataController.swift in Sources */,
+				0300080F1D919A76007969CD /* NLDoneViewController.swift in Sources */,
 				03C0D9491D91638200B4571A /* MLPendingViewController.swift in Sources */,
 				030007EA1D91707F007969CD /* MLPendingVCModel.swift in Sources */,
 				03C0D9511D91645500B4571A /* MLDataAccessManager.swift in Sources */,

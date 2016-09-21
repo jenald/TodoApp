@@ -5,17 +5,22 @@
 //  Created by Rey Pena on 20/09/2016.
 //  Copyright © 2016 Malaysia. All rights reserved.
 //
+var storageData : Storage!
 
 import UIKit
+import SugarRecord
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let font = UIFont(name: "HelveticaNeue-Light", size: 16)
+        UILabel.appearance().defaultFont = font
+        
         return true
     }
 
@@ -41,6 +46,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // Initializing CoreDataDefaultStorage
+    func coreDataStorage() -> CoreDataDefaultStorage {
+        let store = CoreData.Store.Named("TodoAppML")
+        let bundle = NSBundle(forClass: self.classForCoder)
+        let model = CoreData.ObjectModel.Merged([bundle])
+        let defaultStorage = try! CoreDataDefaultStorage(store: store, model: model)
+        return defaultStorage
+    }
 
 }
 

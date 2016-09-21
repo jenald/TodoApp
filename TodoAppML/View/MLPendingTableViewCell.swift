@@ -12,6 +12,7 @@ import Foundation
 class MLPendingTableViewCell: UITableViewCell {
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var cancelButton: UIButton!
+    var data : AnyObject!
     
     let DEFAULT_COUNT = Int(5)
     
@@ -49,13 +50,14 @@ class MLPendingTableViewCell: UITableViewCell {
         
         if start {
             let pulseAnimation = CABasicAnimation(keyPath: "opacity")
-            pulseAnimation.duration = 1.25
-            pulseAnimation.fromValue = 0.6
+            pulseAnimation.duration = 1
+            pulseAnimation.fromValue = 0.5
             pulseAnimation.toValue = 1
             pulseAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
             pulseAnimation.autoreverses = true
             pulseAnimation.repeatCount = FLT_MAX
             self.cancelButton.layer.backgroundColor = UIColor.redColor().CGColor
+            self.cancelButton.layer.cornerRadius = 3
             self.cancelButton.layer.addAnimation(pulseAnimation, forKey: "animateOpacity")
         } else {
             self.cancelButton.hidden = true

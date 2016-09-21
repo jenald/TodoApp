@@ -10,6 +10,7 @@ target 'TodoAppML' do
   pod 'Alamofire'
   pod 'SwiftSpinner'
   pod 'SnapKit'
+  pod "SugarRecord/CoreData"
 
   target 'TodoAppMLTests' do
     inherit! :search_paths

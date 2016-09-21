@@ -19,7 +19,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Result.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SugarRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,27 +47,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>12571FE6085BEE279E9E277BC76DDDA8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2FB805CD5D71C662C2A377285B411FB4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>38C26997E9C56823C181E4FEAD133F16</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>72A91513DDE43AF97F1CB886A26C18ED</key>
+		<key>3B7E22E35003DCA3BBE819E82646C045</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90B3513BF458DBAD9C723DA0F0AC3335</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC8CDBBA23068C773ACA4B0373AEC608</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0B20556E0C7260D6CC4AA5F66E559A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D61AFB8779922B3A90F945466C441DD0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE88B63F55EEBDD7CA8819D3CD04133F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
